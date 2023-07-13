@@ -1,0 +1,66 @@
+#section-desafio{
+    background: radial-gradient(ellipse at bottom, #fff 35%, #E3E3E3);
+    min-height: 850px;
+    > div{
+        width: 100%;
+        background-image: url("../img/bg_desafio.png");
+        background-size: 75%;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        min-height: 850px;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        h2{
+            font-family: "inter-semibold";
+            font-size:$title-size-1;
+            color:$color-azul;
+            text-align: center;
+            margin-bottom: 3rem;
+            span{
+                font-family: "inter-semibold";
+                display: block;
+                color:$color-rojo;
+            }
+        }
+        p{
+            font-family: "inter-semibold";
+            text-align: center;
+            font-size:$text-size-2;
+            color:$color-rojo;
+    
+        }
+    }
+   
+}
+@media screen and (min-width: 300px) and (max-width: 999.9px){
+    #section-desafio{
+        background-size: 85%;
+        min-height: 320px;
+        > div{
+            min-height: 320px;
+            h2{
+                font-size:$title-size-2;
+                padding: 0px 20px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499.9px){
+    #section-desafio{
+        background-size: 85%;
+        min-height: 720px;
+        > div{
+            min-height: 720px;
+        }
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 1799.9px){
+    #section-desafio{
+        background-size: 82%;
+        min-height: 820px;
+        > div{
+            min-height: 820px;
+        }
+    }
+}

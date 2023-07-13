@@ -1,0 +1,42 @@
+#section-digitalizacion{
+    padding-left:22%;
+    padding-right:22%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    h1{
+        width: 100%;
+        margin: auto;
+        font-family: "inter-semibold";
+        font-size: $title-size-2;
+        color:$color-azul;
+        margin-bottom: 3rem;
+        span{
+            font-family: "inter-semibold";
+            color:$color-rojo;
+        }
+    }
+    p{
+        color:$color-gris;
+        font-size: $text-size-3;
+    }
+    
+}
+@media screen and (min-width: 300px) and (max-width: 999.9px){
+    #section-digitalizacion{
+        padding-left:5%;
+        padding-right:5%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1399.9px){
+    #section-digitalizacion{
+        padding-left:10%;
+        padding-right:10%;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1799.9px){
+    #section-digitalizacion{
+        padding-left:17%;
+        padding-right:17%;
+    }
+}
