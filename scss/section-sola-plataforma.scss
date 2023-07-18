@@ -1,0 +1,32 @@
+#section-sola-plataforma{
+    min-height: 850px;
+    background-image: url("../img/una_sola_plataforma.png");
+    background-size: 75%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    p{
+        font-size: $title-size-2;
+        color:$color-azul;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 999.9px){
+    #section-desafio{
+        min-height: 320px;
+
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499.9px){
+    #section-desafio{
+        min-height: 720px;
+
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 1799.9px){
+    #section-desafio{
+        min-height: 820px;
+    }
+}

@@ -260,7 +260,6 @@ main.hero button {
 
 @media screen and (min-width: 300px) and (max-width: 999.9px) {
   #section-desafio {
-    background-size: 85%;
     min-height: 320px;
   }
   #section-desafio > div {
@@ -273,7 +272,6 @@ main.hero button {
 }
 @media screen and (min-width: 1000px) and (max-width: 1499.9px) {
   #section-desafio {
-    background-size: 85%;
     min-height: 720px;
   }
   #section-desafio > div {
@@ -288,6 +286,71 @@ main.hero button {
   #section-desafio > div {
     min-height: 820px;
   }
+}
+#section-sola-plataforma {
+  min-height: 850px;
+  background-image: url("../img/una_sola_plataforma.png");
+  background-size: 75%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+}
+#section-sola-plataforma p {
+  font-size: 3rem;
+  color: #363085;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 999.9px) {
+  #section-desafio {
+    min-height: 320px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499.9px) {
+  #section-desafio {
+    min-height: 720px;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1799.9px) {
+  #section-desafio {
+    min-height: 820px;
+  }
+}
+#section-omnicanalidad {
+  margin-top: 3rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+#section-omnicanalidad h4 {
+  font-size: 3rem;
+  color: #363085;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+#section-omnicanalidad h4 span {
+  color: #D42916;
+}
+#section-omnicanalidad > p {
+  text-align: center;
+  color: #363085;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+#section-omnicanalidad .row img {
+  width: 100%;
+}
+#section-omnicanalidad .row p {
+  border-left: 6px #D42916 solid;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  color: #363085;
+  line-height: normal;
+  font-family: "inter-light";
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+#section-omnicanalidad{
+    margin-top: 3rem;
+    padding-left:15%;
+    padding-right:15%;
+    h4{
+        font-size: $title-size-2;
+        color:$color-azul;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        span{
+            color: $color-rojo;
+        }
+    }
+    > p{
+        text-align: center;
+        color: $color-azul;
+        font-size:$text-size-1;
+        font-weight: 500;
+    }
+    .row {
+        img{
+            width: 100%;
+        }
+        p{
+            border-left:6px $color-rojo solid;
+            padding-left: 1rem;
+            font-size: $text-size-3;
+            color: $color-azul;
+            line-height: normal;
+            font-family: "inter-light";
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+    }
+}
