@@ -124,7 +124,7 @@ main.hero p {
   font-family: "inter-light";
 }
 main.hero button {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #fff;
   padding: 5px 2.8rem;
   border: 2px #fff solid;
@@ -351,6 +351,187 @@ main.hero button {
   font-family: "inter-light";
   font-weight: 700;
   margin-bottom: 2rem;
+}
+
+#section-integracion {
+  padding-left: 10%;
+  padding-right: 10%;
+  background: radial-gradient(ellipse at bottom, #FFF 35%, #EDEDED);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+#section-integracion .hexagono-1, #section-integracion .hexagono-2 {
+  width: 27%;
+  position: absolute;
+  z-index: 2;
+}
+#section-integracion .hexagono-1 {
+  left: 4%;
+}
+#section-integracion .hexagono-2 {
+  right: -5%;
+  bottom: -10%;
+}
+#section-integracion img {
+  width: 80%;
+  margin: auto;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+#section-integracion h4 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "inter-medium";
+  color: #363085;
+}
+#section-integracion p {
+  color: #808080;
+  font-size: 1.25rem;
+}
+#section-integracion .columna-1 h4 {
+  text-align: right;
+}
+#section-integracion .columna-2 h4 {
+  text-align: left;
+}
+
+#section-integra {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+#section-integra > .title {
+  font-weight: bold;
+  color: #363085;
+  font-size: 3rem;
+  text-align: end;
+  margin-bottom: -6rem;
+}
+#section-integra > .title span {
+  color: #D42916;
+}
+#section-integra .slick-slide {
+  transform: all 0.3sec;
+}
+#section-integra .slick-current.slick-active {
+  transform: scale(1);
+  opacity: 1;
+}
+#section-integra .slick-active:not(.slick-current) {
+  transform: scale(0.6);
+  margin-top: -5rem;
+  margin-left: -3rem;
+  margin-right: 3rem;
+  opacity: 0.6;
+}
+#section-integra .slick-prev {
+  width: 2.65rem;
+  height: 2.65rem;
+  left: -2rem;
+}
+#section-integra .slick-prev::before {
+  color: #363085;
+  font-size: 2.65rem;
+}
+#section-integra .slick-next {
+  right: -10rem;
+  width: 7rem;
+  height: 7rem;
+}
+#section-integra .slick-next::before {
+  color: #363085;
+  font-size: 7rem;
+}
+#section-integra .slick-list {
+  padding-top: 10rem !important;
+  padding-bottom: 5rem !important;
+}
+#section-integra .slick-track {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 2rem;
+}
+#section-integra .carta {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px rgba(30, 30, 30, 0.2);
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+#section-integra .carta span {
+  padding: 0.2rem 0.75rem;
+  font-size: 2.65rem;
+  color: #fff;
+  background-color: #D42916;
+  border-radius: 12px;
+  position: absolute;
+  bottom: -2.5rem;
+  left: calc(50% - 2.5rem);
+  z-index: 111;
+}
+#section-integra .carta img {
+  width: 15rem;
+  position: absolute;
+  top: -7.5rem;
+  left: calc(50% - 7.5rem);
+}
+#section-integra .carta .title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.875rem;
+  text-align: center;
+  color: #fff;
+  background-color: #363085;
+  border-radius: 15px;
+}
+#section-integra .carta .text {
+  font-size: 1.4rem;
+  color: #808080;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 999.9px) {
+  #section-integra {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  #section-integra .carta .text {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499.9px) {
+  #section-integra {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  #section-integra .carta .text {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1799.9px) {
+  #section-integra {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  #section-integra .carta .text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,142 @@
+#section-integra{
+    padding-left:25%;
+    padding-right:25%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    > .title{
+        font-weight: bold;
+        color: $color-azul;
+        font-size: $title-size-2;
+        text-align: end;
+        margin-bottom: -6rem;
+        span{
+            color:$color-rojo;
+        }
+    }
+    .slick-slide{
+        transform: all 0.3sec;
+    }
+    .slick-current.slick-active{
+        transform: scale(1);
+        opacity: 1;
+    }
+    .slick-active:not(.slick-current){
+        transform: scale(0.6);
+        margin-top: -5rem;
+        margin-left: -3rem;
+        margin-right: 3rem;
+        opacity: 0.6;
+    }
+    .slick-prev{
+        width: $title-size-3;
+        height: $title-size-3;
+        left: -2rem;
+    }
+    .slick-prev::before{
+        color:$color-azul;
+        font-size: $title-size-3;
+    }
+    .slick-next{
+        right: -10rem;
+        width: 7rem;
+        height: 7rem;
+    }
+    .slick-next::before{
+        color:$color-azul;
+        font-size: 7rem;
+    }
+   
+    .slick-list{
+        padding-top: 10rem !important;
+        padding-bottom: 5rem !important;
+    }
+    .slick-track{
+        display: flex;
+        gap: 50px;
+        padding-bottom: 2rem;
+    }
+    .carta{
+        position: relative;
+        border-radius: 15px;
+        box-shadow: 0px 0px 12px rgba(30,30,30,0.2);
+        padding-top: 10rem;
+        padding-bottom: 2rem;
+        span{
+            padding: 0.2rem 0.75rem;
+            font-size: $title-size-3;
+            color:$color-blanco;
+            background-color: $color-rojo;
+            border-radius: 12px;
+            position: absolute;
+            bottom: -2.5rem;
+            left:calc(50% - 2.5rem);
+            z-index: 111;
+        }
+        img{
+            width: 15rem;
+            position: absolute;
+            top: -7.5rem;
+            left: calc(50% - 7.5rem);
+        }
+        .title{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: $text-size-1;
+            text-align: center;
+            color:$color-blanco;
+            background-color: $color-azul;
+            border-radius: 15px;
+        }
+        .text{
+            font-size: $text-size-3;
+            color: $color-gris;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            text-align: center;
+        }
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 999.9px){
+    #section-integra{
+        padding-left:3%;
+        padding-right:3%;
+        .carta{
+            .text{
+                padding-top: 1.2rem;
+                padding-bottom: 1.2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499.9px){
+    #section-integra{
+        padding-left:12%;
+        padding-right:12%;
+        .carta{
+            .text{
+                padding-top: 1.4rem;
+                padding-bottom: 1.4rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 1799.9px){
+    #section-integra{
+        padding-left:18%;
+        padding-right:18%;
+        .carta{
+            .text{
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                padding-left: 1.8rem;
+                padding-right: 1.8rem;
+            }
+        }
+    }
+}

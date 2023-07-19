@@ -1,0 +1,49 @@
+#section-integracion{
+    padding-left:10%;
+    padding-right:10%;
+    background: radial-gradient(ellipse at bottom, #FFF 35%, #EDEDED);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    .hexagono-1,.hexagono-2{
+        width: 27%;
+        position: absolute;
+        z-index: 2;
+
+    }
+    .hexagono-1{
+        left: 4%;
+    }
+    .hexagono-2{
+        right: -5%;
+        bottom: -10%;
+    }
+    img{
+        width: 80%;
+        margin: auto;
+        display: block;
+        position: relative;
+        z-index: 3;
+    }
+    h4{
+        font-size: $title-size-2;
+        font-weight: bold;
+        font-family: "inter-medium";
+        color: $color-azul;
+        
+    }
+    p{
+        color: $color-gris;
+        font-size: $text-size-4;
+    }
+    .columna-1{
+        h4{
+            text-align: right;
+        }
+    }
+    .columna-2{
+        h4{
+            text-align: left;
+        }
+    }
+}
