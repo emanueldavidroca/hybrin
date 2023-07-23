@@ -5,6 +5,8 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     position: relative;
+    overflow-x: clip;
+    overflow-y: visible;
     .hexagono-1,.hexagono-2{
         width: 27%;
         position: absolute;
@@ -25,7 +27,7 @@
         position: relative;
         z-index: 3;
     }
-    h4{
+    .title{
         font-size: $title-size-2;
         font-weight: bold;
         font-family: "inter-medium";

@@ -360,6 +360,8 @@ main.hero button {
   padding-top: 4rem;
   padding-bottom: 4rem;
   position: relative;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 #section-integracion .hexagono-1, #section-integracion .hexagono-2 {
   width: 27%;
@@ -380,7 +382,7 @@ main.hero button {
   position: relative;
   z-index: 3;
 }
-#section-integracion h4 {
+#section-integracion .title {
   font-size: 3rem;
   font-weight: bold;
   font-family: "inter-medium";
@@ -531,6 +533,145 @@ main.hero button {
     padding-bottom: 2rem;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
+  }
+}
+#section-servicios {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 0px 15%;
+  position: relative;
+}
+#section-servicios h5 {
+  font-size: 3rem;
+  color: #363085;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  width: 50%;
+  top: 5%;
+}
+#section-servicios h5 span {
+  color: #D42916;
+}
+#section-servicios img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+#section-servicios .texto-1, #section-servicios .texto-2, #section-servicios .texto-3, #section-servicios .texto-4, #section-servicios .texto-5 {
+  color: #363085;
+  font-size: 1.563rem;
+  line-height: 1.563rem;
+  font-weight: bold;
+  position: absolute;
+}
+#section-servicios .texto-1 {
+  top: 12%;
+  right: 20%;
+}
+#section-servicios .texto-2 {
+  top: 30%;
+  right: 22%;
+}
+#section-servicios .texto-3 {
+  top: 60%;
+  left: 15%;
+}
+#section-servicios .texto-4 {
+  top: 84%;
+  left: 20%;
+}
+#section-servicios .texto-5 {
+  top: 81%;
+  right: 22%;
+}
+
+@media (max-width: 767px) {
+  #section-servicios {
+    padding: 0px 0%;
+    overflow-x: clip;
+    overflow-y: visible;
+    margin-top: 200px;
+  }
+  #section-servicios h5 {
+    position: absolute;
+    top: -100px;
+  }
+  #section-servicios .texto-1, #section-servicios .texto-2, #section-servicios .texto-3, #section-servicios .texto-4, #section-servicios .texto-5 {
+    font-size: 1.563rem;
+    line-height: 1.563rem;
+    letter-spacing: -0.5px;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  #section-servicios .texto-1 {
+    top: 8%;
+    right: 2%;
+  }
+  #section-servicios .texto-2 {
+    top: 25%;
+    right: 3%;
+  }
+  #section-servicios .texto-3 {
+    top: 56%;
+    left: 1%;
+  }
+  #section-servicios .texto-4 {
+    top: 86%;
+    left: 5%;
+  }
+  #section-servicios .texto-5 {
+    top: 77%;
+    right: 2%;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  #section-servicios .texto-1 {
+    top: 9%;
+    right: 3%;
+  }
+  #section-servicios .texto-2 {
+    top: 28%;
+    right: 5%;
+  }
+  #section-servicios .texto-3 {
+    top: 56%;
+    left: 2%;
+  }
+  #section-servicios .texto-4 {
+    top: 86%;
+    left: 5%;
+  }
+  #section-servicios .texto-5 {
+    top: 78%;
+    right: 2%;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  #section-servicios .texto-1, #section-servicios .texto-2, #section-servicios .texto-3, #section-servicios .texto-4, #section-servicios .texto-5 {
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    letter-spacing: -0.3px;
+  }
+  #section-servicios .texto-1 {
+    top: 11%;
+    right: 4%;
+  }
+  #section-servicios .texto-2 {
+    top: 30%;
+    right: 6%;
+  }
+  #section-servicios .texto-3 {
+    top: 58%;
+    left: 2%;
+  }
+  #section-servicios .texto-4 {
+    top: 85%;
+    left: 8%;
+  }
+  #section-servicios .texto-5 {
+    top: 80%;
+    right: 5%;
   }
 }
 
