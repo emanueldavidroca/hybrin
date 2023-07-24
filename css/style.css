@@ -28,7 +28,7 @@ html {
 
 @media screen and (min-width: 300px) and (max-width: 767.9px) {
   html {
-    font-size: 50%;
+    font-size: 52%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 999.9px) {
@@ -672,6 +672,151 @@ main.hero button {
   #section-servicios .texto-5 {
     top: 80%;
     right: 5%;
+  }
+}
+#section-demo {
+  background-image: url("../img/hexagono.png");
+  background-size: auto 75%;
+  background-position: 10% bottom;
+  background-repeat: no-repeat;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#section-demo .title {
+  color: #363085;
+  text-align: center;
+  font-size: 3.7rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+#section-demo .row > #columna {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+}
+#section-demo .row > #columna .information {
+  padding-right: 8%;
+  display: inline-block;
+  width: 35%;
+  text-align: end;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#section-demo .row > #columna .information p.no-margin {
+  margin-bottom: 0px;
+}
+#section-demo .row > #columna .information .mail {
+  margin-bottom: 3rem;
+}
+#section-demo .row > #columna .information p {
+  color: #363085;
+  font-size: 1.563rem;
+  font-weight: bolder;
+}
+#section-demo .row > #columna .information p svg {
+  margin-left: 5px;
+  color: #D42916;
+  font-size: 1.563rem;
+}
+#section-demo .row > #columna .information .social > svg {
+  color: #D42916;
+  margin-left: 1rem;
+  font-size: 1.875rem;
+}
+#section-demo .row > #columna .information span {
+  display: block;
+  margin-right: 2rem;
+  color: #808080;
+}
+#section-demo .row > #columna form {
+  display: inline-block;
+  width: 45%;
+}
+#section-demo .row > #columna form input, #section-demo .row > #columna form textarea {
+  border: 2px #D42916 solid;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+#section-demo .row > #columna form button {
+  margin-top: 2rem;
+  background-color: #D42916;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 4rem;
+}
+#section-demo .row > #columna form ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #808080;
+}
+#section-demo .row > #columna form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #808080;
+  opacity: 1;
+}
+#section-demo .row > #columna form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #808080;
+  opacity: 1;
+}
+#section-demo .row > #columna form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #808080;
+}
+#section-demo .row > #columna form ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #808080;
+}
+#section-demo .row > #columna form ::placeholder { /* Most modern browsers support this now. */
+  color: #808080;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767.9px) {
+  #section-demo .row > #columna {
+    display: block;
+  }
+  #section-demo .row > #columna .information {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  #section-demo .row > #columna .information p {
+    font-size: 1.875rem;
+  }
+  #section-demo .row > #columna .information p svg {
+    font-size: 1.875rem;
+  }
+  #section-demo .row > #columna .information .social > svg {
+    font-size: 1.875rem;
+  }
+  #section-demo .row > #columna .information span {
+    font-size: 1.563rem;
+    margin-right: 0px;
+  }
+  #section-demo .row > #columna form {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  #section-demo .row > #columna form button {
+    font-size: 1.563rem;
+  }
+  #section-demo .row > #columna form ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 1.4rem;
+  }
+  #section-demo .row > #columna form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 1.4rem;
+  }
+  #section-demo .row > #columna form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 1.4rem;
+  }
+  #section-demo .row > #columna form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 1.4rem;
+  }
+  #section-demo .row > #columna form ::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 1.4rem;
+  }
+  #section-demo .row > #columna form ::placeholder { /* Most modern browsers support this now. */
+    font-size: 1.4rem;
   }
 }
 

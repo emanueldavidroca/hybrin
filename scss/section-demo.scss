@@ -1,0 +1,170 @@
+#section-demo{
+    background-image: url("../img/hexagono.png");
+    background-size: auto 75%;
+    background-position: 10% bottom;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .title{
+        color: $color-azul;
+        text-align: center;
+        font-size: $title-size-1;
+        margin-bottom: 3rem;
+        font-weight: bold;
+    }
+    .row{
+        > #columna{
+            background-color: $color-blanco;
+            border-radius: 10px;
+            display: flex;
+            .information{
+                padding-right: 8%;
+                display: inline-block;
+                width: 35%;
+                text-align: end;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                p.no-margin{
+                    margin-bottom: 0px;
+                }
+                .mail{
+                    margin-bottom: 3rem;
+                }
+                p{
+                    color: $color-azul;
+                    font-size: $text-size-2;
+                    font-weight: bolder;
+                    svg{
+                        margin-left: 5px;
+                        color: $color-rojo;
+                        font-size: $text-size-2;
+                    }
+                }
+                .social{
+                    > svg{
+                        color: $color-rojo;
+                        margin-left: 1rem;
+                        font-size: $text-size-1;
+    
+                    }
+                }
+                
+                span{
+                    display: block;
+                    margin-right: 2rem;
+                    color: $color-gris;
+                }
+                
+            }
+            form{
+                display: inline-block;
+                width: 45%;
+
+                input,textarea{
+                    border: 2px $color-rojo solid;
+                    border-radius: 10px;
+                    margin-bottom: 1rem;
+                }
+                button{
+                    margin-top: 2rem;
+                    background-color: $color-rojo;
+                    color:$color-blanco;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    border-radius: 4rem;
+                }
+                ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    color:    $color-gris;
+                }
+                :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                   color:    $color-gris;
+                   opacity:  1;
+                }
+                ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                   color:    $color-gris;
+                   opacity:  1;
+                }
+                :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                   color:    $color-gris;
+                }
+                ::-ms-input-placeholder { /* Microsoft Edge */
+                   color:    $color-gris;
+                }
+                
+                ::placeholder { /* Most modern browsers support this now. */
+                   color:    $color-gris;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 767.9px){
+    #section-demo{
+        .title{
+
+        }
+        .row{
+            > #columna{
+                display: block;
+                .information{
+                    width: 80%;
+                    text-align: center;
+                    margin: auto;
+                    display: block;
+                    margin-bottom: 3rem;
+                    p.no-margin{
+                    }
+                    .mail{
+                    }
+                    p{
+                        font-size: $text-size-1;
+                        svg{
+                            font-size: $text-size-1;
+
+                        }
+                    }
+                    .social{
+                        > svg{
+                            font-size: $text-size-1;
+                        }
+                    }
+                    span{
+                        font-size: $text-size-2;
+                        margin-right: 0px;
+                    }
+                }
+                form{
+                    width: 80%;
+                    margin: auto;
+                    display: block;
+                    input,textarea{
+
+                    }
+                    button{
+                        font-size: $text-size-2;
+                    }
+                    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                        font-size: $text-size-3;
+                    }
+                    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                        font-size: $text-size-3;
+                    }
+                    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                        font-size: $text-size-3;
+                    }
+                    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        font-size: $text-size-3;
+                    }
+                    ::-ms-input-placeholder { /* Microsoft Edge */
+                        font-size: $text-size-3;
+                    }
+                    ::placeholder { /* Most modern browsers support this now. */
+                        font-size: $text-size-3;
+                    }
+                }
+            }
+        }
+    }
+}
