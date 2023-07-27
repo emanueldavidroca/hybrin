@@ -8,7 +8,7 @@
     .title{
         color: $color-azul;
         text-align: center;
-        font-size: $title-size-1;
+        font-size: $title-size-2;
         margin-bottom: 3rem;
         font-weight: bold;
     }
@@ -102,6 +102,7 @@
 }
 @media screen and (min-width: 300px) and (max-width: 767.9px){
     #section-demo{
+        background-image: unset;
         .title{
 
         }
@@ -114,6 +115,7 @@
                     margin: auto;
                     display: block;
                     margin-bottom: 3rem;
+                    padding-right: 0px;
                     p.no-margin{
                     }
                     .mail{

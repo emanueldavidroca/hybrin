@@ -34,3 +34,25 @@
         }
     }
 }
+@media (max-width:767px){
+    #section-omnicanalidad{
+
+        h4{
+
+            span{
+
+            }
+        }
+        > p{
+
+        }
+        .row {
+            img{
+
+            }
+            p{
+                font-size: $text-size-2;
+            }
+        }
+    }    
+}

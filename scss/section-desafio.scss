@@ -35,9 +35,10 @@
 }
 @media screen and (min-width: 300px) and (max-width: 999.9px){
     #section-desafio{
-        min-height: 320px;
+        min-height: 340px;
         > div{
-            min-height: 320px;
+            background-size: 100%;
+            min-height: 380px;
             h2{
                 font-size:$title-size-2;
                 padding: 0px 20px;

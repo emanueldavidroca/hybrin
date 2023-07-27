@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "inter-bold";
   src: url("../font/Inter-Bold.ttf");
@@ -20,6 +21,14 @@
 }
 p, span, a, button, h1, h2, h3, h4, h5 {
   font-family: "inter-regular";
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 html {
@@ -74,6 +83,17 @@ header .navbar-brand img {
   height: 6rem;
 }
 
+@media screen and (min-width: 300px) and (max-width: 767.9px) {
+  header {
+    text-align: center;
+  }
+  header #derecho-nav .nav-item {
+    margin-bottom: 1rem;
+  }
+  header #derecho-nav .nav-item svg {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 1600px) and (max-width: 1800px) {
   header {
     padding-left: 12%;
@@ -260,10 +280,11 @@ main.hero button {
 
 @media screen and (min-width: 300px) and (max-width: 999.9px) {
   #section-desafio {
-    min-height: 320px;
+    min-height: 340px;
   }
   #section-desafio > div {
-    min-height: 320px;
+    background-size: 100%;
+    min-height: 380px;
   }
   #section-desafio > div h2 {
     font-size: 3rem;
@@ -304,17 +325,18 @@ main.hero button {
 }
 
 @media screen and (min-width: 300px) and (max-width: 999.9px) {
-  #section-desafio {
+  #section-sola-plataforma {
+    background-size: 95%;
     min-height: 320px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1499.9px) {
-  #section-desafio {
+  #section-sola-plataforma {
     min-height: 720px;
   }
 }
 @media screen and (min-width: 1500px) and (max-width: 1799.9px) {
-  #section-desafio {
+  #section-sola-plataforma {
     min-height: 820px;
   }
 }
@@ -353,6 +375,11 @@ main.hero button {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 767px) {
+  #section-omnicanalidad .row p {
+    font-size: 1.563rem;
+  }
+}
 #section-integracion {
   padding-left: 10%;
   padding-right: 10%;
@@ -685,7 +712,7 @@ main.hero button {
 #section-demo .title {
   color: #363085;
   text-align: center;
-  font-size: 3.7rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
   font-weight: bold;
 }
@@ -769,6 +796,9 @@ main.hero button {
 }
 
 @media screen and (min-width: 300px) and (max-width: 767.9px) {
+  #section-demo {
+    background-image: unset;
+  }
   #section-demo .row > #columna {
     display: block;
   }
@@ -778,6 +808,7 @@ main.hero button {
     margin: auto;
     display: block;
     margin-bottom: 3rem;
+    padding-right: 0px;
   }
   #section-demo .row > #columna .information p {
     font-size: 1.875rem;
@@ -816,6 +847,107 @@ main.hero button {
     font-size: 1.4rem;
   }
   #section-demo .row > #columna form ::placeholder { /* Most modern browsers support this now. */
+    font-size: 1.4rem;
+  }
+}
+footer {
+  background-color: #F5F3EB;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+footer .contenedor {
+  padding-left: 20%;
+  padding-right: 20%;
+  /*1° columna*/
+  /*2° columna*/
+  /*3° columna*/
+}
+footer .contenedor .logo {
+  height: 95px;
+}
+footer .contenedor .row {
+  margin-top: 3rem;
+}
+footer .contenedor a {
+  text-decoration: none;
+}
+footer .contenedor .subtitle {
+  color: #363085;
+  font-size: 1.2rem;
+  font-family: "inter-medium";
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+footer .contenedor .enviar {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "inter-light";
+  border: 2px #D42916 solid;
+  border-radius: 15px;
+  padding: 3px 15px;
+  color: #D42916;
+  margin-top: 0.2rem;
+  display: inline-block;
+}
+footer .contenedor .acceso {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "inter-light";
+  border: 2px #D42916 solid;
+  border-radius: 15px;
+  padding: 3px 25px;
+  color: #D42916;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+footer .contenedor .social {
+  margin-bottom: 1rem;
+}
+footer .contenedor .social svg {
+  color: #D42916;
+  margin-right: 0.75rem;
+}
+footer .contenedor .mail svg {
+  color: #D42916;
+}
+footer .contenedor .mail span {
+  color: #808080;
+}
+footer .contenedor .text {
+  color: #808080;
+}
+footer .contenedor .links {
+  font-family: "inter-light";
+  font-size: 1.05rem;
+  color: #363085;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  footer {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  footer .contenedor {
+    /*1° columna*/
+    /*2° columna*/
+    /*3° columna*/
+  }
+  footer .contenedor .row .col-12 {
+    margin-bottom: 3rem;
+  }
+  footer .contenedor .subtitle {
+    font-size: 1.875rem;
+  }
+  footer .contenedor .mail {
+    font-size: 1.563rem;
+  }
+  footer .contenedor .text {
+    font-size: 1.563rem;
+  }
+  footer .contenedor .links {
     font-size: 1.4rem;
   }
 }
