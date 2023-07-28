@@ -1,5 +1,5 @@
-#section-desafio{
-    background: radial-gradient(ellipse at bottom, #fff 35%, #E3E3E3);
+#section-desafio-mobile{
+    background: radial-gradient(ellipse at bottom, #fff 70%, #E3E3E3);
     min-height: 850px;
     > div{
         width: 100%;
@@ -34,7 +34,188 @@
    
 }
 @media screen and (min-width: 300px) and (max-width: 999.9px){
-    #section-desafio{
+    #section-desafio-mobile{
+        min-height: 320px;
+        > div{
+            background-size: 120%;
+            min-height: 320px;
+            h2{
+                font-size:2.2rem;
+                padding: 0px 10px;
+                margin-bottom: 1.5rem;
+            }
+            p{
+                font-size:1.45rem;
+
+            }
+        }
+    }
+}
+#section-desafio-desktop{
+    background: radial-gradient(ellipse at bottom, #fff 65%, #E3E3E3);
+    min-height: 850px;
+    padding-top: 8rem;
+    > div{
+        position: relative;
+        width: 100%;
+        /*background-image: url("../img/bg_desafio_mejor.png");
+        background-size: 100%;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;*/
+        min-height: 850px;
+        padding-top: 0rem;
+        padding-bottom: 4rem;
+        .fondo-principal{
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            pointer-events: none;
+        }
+        h2{
+            font-family: "inter-semibold";
+            font-size:$title-size-1;
+            color:$color-azul;
+            text-align: center;
+            position: absolute;
+            top: -14%;
+            width: 100%;
+            span{
+                font-family: "inter-semibold";
+                display: block;
+                color:$color-rojo;
+            }
+        }
+        p{
+            font-family: "inter-semibold";
+            text-align: center;
+            font-size:$text-size-2;
+            color:$color-rojo;
+            position: absolute;
+            top: 10%;
+            width: 100%;
+    
+        }
+    }
+    .engranaje-card{
+        position: absolute;
+        width: 13%;
+        height: 28%;
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 55%;
+            height: 55%;
+            margin: 14% 25% 35% 30%;
+            z-index: 111;
+            font-size: 0.9rem;
+            color:$color-blanco;
+            font-weight:bold;
+            text-shadow: 0px 0px 4px grey;
+        }
+        .engranaje{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .fondo{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    }
+    .engranaje-card:before{
+        background: rgba(255, 0, 0, 0);
+        transition: all 0.3s;
+    }
+    .engranaje-card:hover:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 51, 0, 0.4);
+        width: 55%;
+        height: 55%;
+        margin: 14% 25% 35% 30%;
+        border-radius: 100%;
+        z-index: 2;
+    }
+    .enriquecimiento{
+        z-index: 12;
+        left: 12%;
+        bottom: 28%;
+    }
+    .getaway{
+        z-index: 13;
+        left: 21.5%;
+        bottom: 3%;
+    }
+    .facturacion{
+        z-index: 9;
+        width: 15%;
+        height: 35%;
+        left: 25%;
+        bottom: 30%;
+    }
+    .impresion{
+        z-index: 10;
+        left: 15%;
+        top: 15%;
+        height: 32%;
+        width: 14%;
+    }
+    .postal{
+        z-index: 14;
+        right: 21.5%;
+        bottom: 3%;
+    }
+    .marketing{
+        z-index: 13;
+        right: 12%;
+        bottom: 28%;
+    }
+    .sms{
+        z-index: 10;
+        right: 15%;
+        top: 15%;
+        height: 32%;
+        width: 14%;
+    }
+    
+   
+    .medicion{
+        z-index: 12;
+        width: 15%;
+        height: 35%;
+        right: 25%;
+        bottom: 30%;
+    }
+    
+   
+}
+@media screen and (min-width: 300px) and (max-width: 999.9px){
+    #section-desafio-desktop{
         min-height: 340px;
         > div{
             background-size: 100%;
@@ -46,16 +227,24 @@
         }
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1499.9px){
-    #section-desafio{
-        min-height: 720px;
+@media screen and (min-width: 1000px) and (max-width: 1249.9px){
+    #section-desafio-desktop{
+        min-height: 500px;
         > div{
-            min-height: 720px;
+            min-height: 500px;
+        }
+    }
+}
+@media screen and (min-width: 1250px) and (max-width: 1499.9px){
+    #section-desafio-desktop{
+        min-height: 600px;
+        > div{
+            min-height: 600px;
         }
     }
 }
 @media screen and (min-width: 1500px) and (max-width: 1799.9px){
-    #section-desafio{
+    #section-desafio-desktop{
         background-size: 82%;
         min-height: 820px;
         > div{
