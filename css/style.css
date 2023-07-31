@@ -150,6 +150,10 @@ main.hero button {
   border: 2px #fff solid;
   border-radius: 22px;
 }
+main.hero button:hover {
+  border: 2px #D42916 solid;
+  color: #D42916;
+}
 
 @media screen and (min-width: 300px) and (max-width: 999.9px) {
   main.hero {
@@ -756,7 +760,7 @@ main.hero button {
   z-index: 3;
 }
 #section-integracion .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: "inter-medium";
   color: #363085;
@@ -765,7 +769,7 @@ main.hero button {
   color: #808080;
   font-size: 1.25rem;
 }
-#section-integracion .columna-1 h4 {
+#section-integracion .columna-1 p {
   text-align: right;
 }
 #section-integracion .columna-2 h4 {

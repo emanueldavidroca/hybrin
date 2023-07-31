@@ -26,6 +26,11 @@ main.hero{
         border: 2px $color-blanco solid;
         border-radius: 22px;
     }
+    button:hover{
+        border: 2px $color-rojo solid;
+        color:$color-rojo;
+
+    }
 }
 @media screen and (min-width: 300px) and (max-width: 999.9px){
     main.hero{
