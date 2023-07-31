@@ -125,11 +125,28 @@
 @media screen and (min-width: 1000px) and (max-width: 1499.9px){
     #section-sola-plataforma-desktop{
         min-height: 720px;
-
+        .texto{
+            padding: 0.6rem 1.1rem;
+            font-size: 1.1rem;
+        }
+        .hexagono{
+            p{
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 @media screen and (min-width: 1500px) and (max-width: 1799.9px){
     #section-sola-plataforma-desktop{
         min-height: 820px;
+        .texto{
+            padding: 1rem 1.5rem;
+            font-size: 1.225rem;
+        }
+        .hexagono{
+            p{
+                font-size: 1.4rem;
+            }
+        }
     }
 }
