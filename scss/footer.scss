@@ -1,10 +1,11 @@
 footer{
     background-color: #F5F3EB;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    
     .contenedor{
         padding-left:20%;
         padding-right:20%;
+        padding-bottom: 5rem;
         .logo{
             height: 95px;
         }
@@ -74,6 +75,22 @@ footer{
             font-weight: bold;
             margin-top: 1rem;
             display: block;
+        }
+    }
+    .mini-banner{
+        background-color: $color-azul;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 10px;
+        p{
+            color: $color-blanco;
+            font-size: 1.2rem;
+        }
+        img{
+            height: 3.5rem;
         }
     }
 }

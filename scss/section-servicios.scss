@@ -26,7 +26,34 @@
         line-height: $text-size-2;
         font-weight: bold;
         position: absolute;
+        transition: all 0.4s;
     }
+    .texto-1:after,.texto-2:after,.texto-3:after,.texto-4:after,.texto-5:after{
+        content: "";
+        border-bottom: 3px  transparent solid;
+        width: 0px;
+        transition: all 0.3s;
+        display: block;
+    }
+    .texto-1:before,.texto-2:before,.texto-3:before,.texto-4:before,.texto-5:before{
+        content: "";
+        border-bottom: 3px  transparent solid;
+        width: 0px;
+        transition: all 0.3s;
+        display: block;
+    }
+    .texto-1:hover,.texto-2:hover,.texto-3:hover,.texto-4:hover,.texto-5:hover{
+        color:$color-rojo;
+    }
+    .texto-1:hover:after,.texto-2:hover:after,.texto-3:hover:after,.texto-4:hover:after,.texto-5:hover:after{
+        width: 100%;
+        border-bottom: 3px  $color-rojo solid;
+    }
+    .texto-1:hover:before,.texto-2:hover:before,.texto-3:hover:before,.texto-4:hover:before,.texto-5:hover:before{
+        width: 100%;
+        border-bottom: 3px  $color-rojo solid;
+    }
+    
     .texto-1{
         top: 12%;
         right:(20%);

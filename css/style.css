@@ -280,11 +280,11 @@ main.hero button {
 
 @media screen and (min-width: 300px) and (max-width: 999.9px) {
   #section-desafio-mobile {
-    min-height: 320px;
+    min-height: 360px;
   }
   #section-desafio-mobile > div {
     background-size: 120%;
-    min-height: 320px;
+    min-height: 360px;
   }
   #section-desafio-mobile > div h2 {
     font-size: 2.2rem;
@@ -303,11 +303,6 @@ main.hero button {
 #section-desafio-desktop > div {
   position: relative;
   width: 100%;
-  /*background-image: url("../img/bg_desafio_mejor.png");
-  background-size: 100%;
-  background-position-y: bottom;
-  background-position-x: center;
-  background-repeat: no-repeat;*/
   min-height: 850px;
   padding-top: 0rem;
   padding-bottom: 4rem;
@@ -319,6 +314,7 @@ main.hero button {
   height: 100%;
   object-fit: contain;
   pointer-events: none;
+  object-position: bottom;
 }
 #section-desafio-desktop > div h2 {
   font-family: "inter-semibold";
@@ -345,8 +341,8 @@ main.hero button {
 }
 #section-desafio-desktop .engranaje-card {
   position: absolute;
-  width: 13%;
-  height: 28%;
+  width: 14%;
+  height: 34%;
 }
 #section-desafio-desktop .engranaje-card p {
   display: flex;
@@ -364,7 +360,7 @@ main.hero button {
   font-size: 0.9rem;
   color: #fff;
   font-weight: bold;
-  text-shadow: 0px 0px 4px grey;
+  text-shadow: 0px 0px 4px black, 0px 0px 4px black;
 }
 #section-desafio-desktop .engranaje-card .engranaje {
   position: absolute;
@@ -410,6 +406,9 @@ main.hero button {
   left: 12%;
   bottom: 28%;
 }
+#section-desafio-desktop .enriquecimiento p {
+  font-size: 0.65rem;
+}
 #section-desafio-desktop .getaway {
   z-index: 13;
   left: 21.5%;
@@ -417,17 +416,17 @@ main.hero button {
 }
 #section-desafio-desktop .facturacion {
   z-index: 9;
-  width: 15%;
+  width: 16%;
   height: 35%;
-  left: 25%;
-  bottom: 30%;
+  left: 27%;
+  bottom: 35%;
 }
 #section-desafio-desktop .impresion {
   z-index: 10;
   left: 15%;
-  top: 15%;
-  height: 32%;
-  width: 14%;
+  top: 6%;
+  width: 16%;
+  height: 35%;
 }
 #section-desafio-desktop .postal {
   z-index: 14;
@@ -442,54 +441,101 @@ main.hero button {
 #section-desafio-desktop .sms {
   z-index: 10;
   right: 15%;
-  top: 15%;
-  height: 32%;
-  width: 14%;
+  top: 6%;
+  height: 35%;
+  width: 16%;
 }
 #section-desafio-desktop .medicion {
   z-index: 12;
-  width: 15%;
+  width: 16%;
   height: 35%;
-  right: 25%;
-  bottom: 30%;
+  right: 27%;
+  bottom: 35%;
 }
 
-@media screen and (min-width: 300px) and (max-width: 999.9px) {
-  #section-desafio-desktop {
-    min-height: 340px;
-  }
-  #section-desafio-desktop > div {
-    background-size: 100%;
-    min-height: 380px;
-  }
-  #section-desafio-desktop > div h2 {
-    font-size: 3rem;
-    padding: 0px 20px;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1249.9px) {
-  #section-desafio-desktop {
-    min-height: 500px;
-  }
-  #section-desafio-desktop > div {
-    min-height: 500px;
-  }
-}
-@media screen and (min-width: 1250px) and (max-width: 1499.9px) {
+@media screen and (min-width: 1000px) and (max-width: 1499.9px) {
   #section-desafio-desktop {
     min-height: 600px;
   }
   #section-desafio-desktop > div {
     min-height: 600px;
   }
-}
-@media screen and (min-width: 1500px) and (max-width: 1799.9px) {
-  #section-desafio-desktop {
-    background-size: 82%;
-    min-height: 820px;
+  #section-desafio-desktop .engranaje-card {
+    width: 17%;
+    height: 36%;
   }
-  #section-desafio-desktop > div {
-    min-height: 820px;
+  #section-desafio-desktop .engranaje-card p {
+    width: 55%;
+    height: 60%;
+    margin: 14% 25% 35% 30%;
+  }
+  #section-desafio-desktop .enriquecimiento {
+    z-index: 12;
+    left: 8%;
+    bottom: 28%;
+  }
+  #section-desafio-desktop .enriquecimiento p {
+    font-size: 0.65rem;
+  }
+  #section-desafio-desktop .getaway {
+    z-index: 13;
+    left: 17.5%;
+    bottom: 3%;
+  }
+  #section-desafio-desktop .facturacion {
+    z-index: 9;
+    width: 16%;
+    height: 35%;
+    left: 27%;
+    bottom: 34%;
+  }
+  #section-desafio-desktop .impresion {
+    z-index: 10;
+    left: 16%;
+    top: 8%;
+    width: 16%;
+    height: 35%;
+  }
+  #section-desafio-desktop .postal {
+    z-index: 14;
+    right: 21.5%;
+    bottom: 3%;
+  }
+  #section-desafio-desktop .marketing {
+    z-index: 13;
+    right: 8%;
+    bottom: 28%;
+  }
+  #section-desafio-desktop .sms {
+    z-index: 10;
+    right: 16%;
+    top: 8%;
+    height: 35%;
+    width: 16%;
+  }
+  #section-desafio-desktop .medicion {
+    z-index: 12;
+    width: 16%;
+    height: 35%;
+    right: 27%;
+    bottom: 34%;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1699.9px) {
+  #section-desafio-desktop .engranaje-card p {
+    width: 55%;
+    height: 42%;
+    margin: 14% 25% 35% 30%;
+  }
+}
+@media screen and (min-width: 1700px) and (max-width: 2199.9px) {
+  #section-desafio-desktop .engranaje-card p {
+    width: 55%;
+    height: 52%;
+    margin: 14% 25% 35% 30%;
+  }
+  #section-desafio-desktop .enriquecimiento p {
+    font-size: 0.8rem;
   }
 }
 #section-sola-plataforma-mobile {
@@ -509,7 +555,7 @@ main.hero button {
 
 @media screen and (min-width: 300px) and (max-width: 769.9px) {
   #section-sola-plataforma-mobile {
-    min-height: 320px;
+    min-height: 360px;
   }
 }
 #section-sola-plataforma-desktop {
@@ -523,6 +569,20 @@ main.hero button {
   width: 100%;
   object-fit: scale-down;
   pointer-events: none;
+}
+#section-sola-plataforma-desktop .texto {
+  font-size: 1.35rem;
+  padding: 1.5rem 2rem;
+  width: 22%;
+  height: 14%;
+  position: absolute;
+  right: 18.3%;
+  top: 52%;
+  z-index: 3;
+  color: #D42916;
+  font-family: "inter-medium";
+  align-items: center;
+  display: flex;
 }
 #section-sola-plataforma-desktop .hexagono {
   position: absolute;
@@ -539,14 +599,22 @@ main.hero button {
   padding-bottom: 1.5rem;
 }
 #section-sola-plataforma-desktop .hexagono p {
+  transition: all 0.3s;
   color: #363085;
   font-size: 1.4rem;
   font-weight: bold;
 }
 #section-sola-plataforma-desktop .hexagono img {
   width: 19%;
+  transition: all 0.3s;
   position: absolute;
   top: 2.5rem;
+}
+#section-sola-plataforma-desktop .hexagono:hover img {
+  width: 22%;
+}
+#section-sola-plataforma-desktop .hexagono:hover p {
+  color: #D42916;
 }
 #section-sola-plataforma-desktop .administrar {
   left: 2%;
@@ -860,6 +928,32 @@ main.hero button {
   line-height: 1.563rem;
   font-weight: bold;
   position: absolute;
+  transition: all 0.4s;
+}
+#section-servicios .texto-1:after, #section-servicios .texto-2:after, #section-servicios .texto-3:after, #section-servicios .texto-4:after, #section-servicios .texto-5:after {
+  content: "";
+  border-bottom: 3px transparent solid;
+  width: 0px;
+  transition: all 0.3s;
+  display: block;
+}
+#section-servicios .texto-1:before, #section-servicios .texto-2:before, #section-servicios .texto-3:before, #section-servicios .texto-4:before, #section-servicios .texto-5:before {
+  content: "";
+  border-bottom: 3px transparent solid;
+  width: 0px;
+  transition: all 0.3s;
+  display: block;
+}
+#section-servicios .texto-1:hover, #section-servicios .texto-2:hover, #section-servicios .texto-3:hover, #section-servicios .texto-4:hover, #section-servicios .texto-5:hover {
+  color: #D42916;
+}
+#section-servicios .texto-1:hover:after, #section-servicios .texto-2:hover:after, #section-servicios .texto-3:hover:after, #section-servicios .texto-4:hover:after, #section-servicios .texto-5:hover:after {
+  width: 100%;
+  border-bottom: 3px #D42916 solid;
+}
+#section-servicios .texto-1:hover:before, #section-servicios .texto-2:hover:before, #section-servicios .texto-3:hover:before, #section-servicios .texto-4:hover:before, #section-servicios .texto-5:hover:before {
+  width: 100%;
+  border-bottom: 3px #D42916 solid;
 }
 #section-servicios .texto-1 {
   top: 12%;
@@ -1122,11 +1216,11 @@ main.hero button {
 footer {
   background-color: #F5F3EB;
   padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 footer .contenedor {
   padding-left: 20%;
   padding-right: 20%;
+  padding-bottom: 5rem;
   /*1° columna*/
   /*2° columna*/
   /*3° columna*/
@@ -1192,6 +1286,22 @@ footer .contenedor .links {
   font-weight: bold;
   margin-top: 1rem;
   display: block;
+}
+footer .mini-banner {
+  background-color: #363085;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 10px;
+}
+footer .mini-banner p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+footer .mini-banner img {
+  height: 3.5rem;
 }
 
 @media (max-width: 767px) {

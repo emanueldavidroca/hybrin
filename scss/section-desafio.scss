@@ -28,17 +28,16 @@
             text-align: center;
             font-size:$text-size-2;
             color:$color-rojo;
-    
         }
     }
    
 }
 @media screen and (min-width: 300px) and (max-width: 999.9px){
     #section-desafio-mobile{
-        min-height: 320px;
+        min-height: 360px;
         > div{
             background-size: 120%;
-            min-height: 320px;
+            min-height: 360px;
             h2{
                 font-size:2.2rem;
                 padding: 0px 10px;
@@ -46,7 +45,6 @@
             }
             p{
                 font-size:1.45rem;
-
             }
         }
     }
@@ -58,11 +56,6 @@
     > div{
         position: relative;
         width: 100%;
-        /*background-image: url("../img/bg_desafio_mejor.png");
-        background-size: 100%;
-        background-position-y: bottom;
-        background-position-x: center;
-        background-repeat: no-repeat;*/
         min-height: 850px;
         padding-top: 0rem;
         padding-bottom: 4rem;
@@ -73,6 +66,7 @@
             height: 100%;
             object-fit: contain;
             pointer-events: none;
+            object-position: bottom;
         }
         h2{
             font-family: "inter-semibold";
@@ -101,8 +95,8 @@
     }
     .engranaje-card{
         position: absolute;
-        width: 13%;
-        height: 28%;
+        width: 14%;
+        height: 34%;
         p{
             display: flex;
             justify-content: center;
@@ -119,7 +113,7 @@
             font-size: 0.9rem;
             color:$color-blanco;
             font-weight:bold;
-            text-shadow: 0px 0px 4px grey;
+            text-shadow: 0px 0px 4px black,0px 0px 4px black;
         }
         .engranaje{
             position: absolute;
@@ -165,6 +159,9 @@
         z-index: 12;
         left: 12%;
         bottom: 28%;
+        p{
+            font-size: 0.65rem;
+        }
     }
     .getaway{
         z-index: 13;
@@ -173,17 +170,17 @@
     }
     .facturacion{
         z-index: 9;
-        width: 15%;
+        width: 16%;
         height: 35%;
-        left: 25%;
-        bottom: 30%;
+        left: 27%;
+        bottom: 35%;
     }
     .impresion{
         z-index: 10;
         left: 15%;
-        top: 15%;
-        height: 32%;
-        width: 14%;
+        top: 6%;
+        width: 16%;
+        height: 35%;
     }
     .postal{
         z-index: 14;
@@ -198,57 +195,111 @@
     .sms{
         z-index: 10;
         right: 15%;
-        top: 15%;
-        height: 32%;
-        width: 14%;
+        top: 6%;
+        height: 35%;
+        width: 16%;
     }
-    
-   
     .medicion{
         z-index: 12;
-        width: 15%;
+        width: 16%;
         height: 35%;
-        right: 25%;
-        bottom: 30%;
-    }
-    
-   
-}
-@media screen and (min-width: 300px) and (max-width: 999.9px){
-    #section-desafio-desktop{
-        min-height: 340px;
-        > div{
-            background-size: 100%;
-            min-height: 380px;
-            h2{
-                font-size:$title-size-2;
-                padding: 0px 20px;
-            }
-        }
+        right: 27%;
+        bottom: 35%;
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1249.9px){
-    #section-desafio-desktop{
-        min-height: 500px;
-        > div{
-            min-height: 500px;
-        }
-    }
-}
-@media screen and (min-width: 1250px) and (max-width: 1499.9px){
+@media screen and (min-width: 1000px) and (max-width: 1499.9px){
     #section-desafio-desktop{
         min-height: 600px;
         > div{
             min-height: 600px;
         }
+
+        .engranaje-card{
+            width: 17%;
+            height: 36%;
+            p{
+                width: 55%;
+                height: 60%;
+                margin: 14% 25% 35% 30%;
+            }
+        }
+        .enriquecimiento{
+            z-index: 12;
+            left: 8%;
+            bottom: 28%;
+            p{
+                font-size: 0.65rem;
+            }
+        }
+        .getaway{
+            z-index: 13;
+            left: 17.5%;
+            bottom: 3%;
+        }
+        .facturacion{
+            z-index: 9;
+            width: 16%;
+            height: 35%;
+            left: 27%;
+            bottom: 34%;
+        }
+        .impresion{
+            z-index: 10;
+            left: 16%;
+            top: 8%;
+            width: 16%;
+            height: 35%;
+        }
+        .postal{
+            z-index: 14;
+            right: 21.5%;
+            bottom: 3%;
+        }
+        .marketing{
+            z-index: 13;
+            right: 8%;
+            bottom: 28%;
+        }
+        .sms{
+            z-index: 10;
+            right: 16%;
+            top: 8%;
+            height: 35%;
+            width: 16%;
+        }
+        .medicion{
+            z-index: 12;
+            width: 16%;
+            height: 35%;
+            right: 27%;
+            bottom: 34%;
+        }
     }
 }
-@media screen and (min-width: 1500px) and (max-width: 1799.9px){
+@media screen and (min-width: 1500px) and (max-width: 1699.9px){
     #section-desafio-desktop{
-        background-size: 82%;
-        min-height: 820px;
-        > div{
-            min-height: 820px;
+        .engranaje-card{
+            p{
+                width: 55%;
+                height: 42%;
+                margin: 14% 25% 35% 30%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1700px) and (max-width: 2199.9px){
+    #section-desafio-desktop{
+        .engranaje-card{
+            p{
+                width: 55%;
+                height: 52%;
+                margin: 14% 25% 35% 30%;
+            }
+        }
+        .enriquecimiento{
+            p{
+                font-size: 0.8rem;
+            }
         }
     }
 }

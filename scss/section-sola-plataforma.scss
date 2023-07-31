@@ -14,7 +14,7 @@
 }
 @media screen and (min-width: 300px) and (max-width: 769.9px){
     #section-sola-plataforma-mobile{
-        min-height: 320px;
+        min-height: 360px;
 
     }
 }
@@ -30,6 +30,20 @@
         pointer-events: none;
         
     }
+    .texto{
+        font-size: 1.35rem;
+        padding: 1.5rem 2rem;
+        width: 22%;
+        height: 14%;
+        position: absolute;
+        right:18.3%;
+        top: 52%;
+        z-index: 3;
+        color:$color-rojo;
+        font-family: "inter-medium";
+        align-items: center;
+        display:flex;
+    }
     .hexagono{
         position: absolute;
         width: 18%;
@@ -44,16 +58,23 @@
         flex-direction: column;
         padding-bottom: 1.5rem;
         p{
+            transition: all 0.3s;
             color: $color-azul;
             font-size: $text-size-3;
             font-weight: bold;
         }
         img{
             width: 19%;
+            transition: all 0.3s;
             position: absolute;
             top: 2.5rem;
         }
-        
+    }
+    .hexagono:hover img{
+        width: 22%;
+    }
+    .hexagono:hover p{
+        color: $color-rojo;
     }
     .administrar{
         left: 2%;
