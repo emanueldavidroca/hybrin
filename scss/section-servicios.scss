@@ -15,10 +15,23 @@
             color: $color-rojo;
         }
     }
-    img{
+    .hexagono{
+        position: absolute;
+        z-index: 3;
+    }
+    .hexagono-1{
+        left: 20%;
+        top: 20%;
+        width: 10%;
+        height: 10%;
+
+    }
+    .fondo{
+        position: relative;
         max-width: 100%;
         display: block;
         width: 100%;
+        z-index: 4;
     }
     .texto-1,.texto-2,.texto-3,.texto-4,.texto-5{
         color:$color-azul;
