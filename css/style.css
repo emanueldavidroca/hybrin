@@ -68,6 +68,9 @@ header .navbar #izquierda-nav a {
   font-weight: 500;
   font-size: 18px;
 }
+header .navbar #izquierda-nav a:hover {
+  color: #D42916;
+}
 header .navbar #derecho-nav {
   column-gap: 25px;
 }
@@ -75,7 +78,7 @@ header .navbar #derecho-nav #acceso-clientes {
   padding: 0px 12px;
   border-radius: 17px;
   color: #363085;
-  border: 2px #D83D2B solid;
+  border: 2px #D42916 solid;
   font-size: 18px;
   font-weight: 500;
 }
@@ -400,7 +403,7 @@ main.hero button:hover {
   right: 0;
   background: rgba(255, 51, 0, 0.4);
   width: 55%;
-  height: 55%;
+  height: 60%;
   margin: 14% 25% 35% 30%;
   border-radius: 100%;
   z-index: 2;
@@ -575,6 +578,9 @@ main.hero button:hover {
   pointer-events: none;
 }
 #section-sola-plataforma-desktop .texto {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 18px grey;
   font-size: 1.35rem;
   padding: 1.5rem 2rem;
   width: 22%;
@@ -634,13 +640,13 @@ main.hero button:hover {
 }
 #section-sola-plataforma-desktop .diseñar {
   right: 22%;
-  top: 36.5%;
+  top: 36%;
   z-index: 1;
 }
 #section-sola-plataforma-desktop .operar {
   z-index: 1;
-  top: 66%;
   right: 22%;
+  bottom: 17.5%;
 }
 #section-sola-plataforma-desktop .conectar {
   right: 1.5%;
@@ -839,6 +845,7 @@ main.hero button:hover {
   padding-bottom: 2rem;
 }
 #section-integra .carta {
+  transition: all 0.35s;
   position: relative;
   border-radius: 15px;
   box-shadow: 0px 0px 12px rgba(30, 30, 30, 0.2);
@@ -879,6 +886,7 @@ main.hero button:hover {
   padding-left: 5rem;
   padding-right: 5rem;
   text-align: center;
+  min-height: 350px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 999.9px) {
@@ -935,18 +943,86 @@ main.hero button:hover {
 #section-servicios h5 span {
   color: #D42916;
 }
-#section-servicios img {
+#section-servicios .hexagono {
+  position: absolute;
+  z-index: 3;
+}
+#section-servicios .hexagono:hover {
+  -webkit-filter: drop-shadow(3px 3px 0 #D42916) drop-shadow(-3px -3px 0 #D42916) drop-shadow(3px -3px 0 #D42916) drop-shadow(-3px 3px 0 #D42916);
+  filter: drop-shadow(3px 3px 0 #D42916) drop-shadow(-3px -3px 0 #D42916) drop-shadow(3px -3px 0 #D42916) drop-shadow(-3px 3px 0 #D42916);
+}
+#section-servicios .hexagono-1:hover + .texto-1 {
+  display: block;
+  opacity: 1;
+  color: #363085;
+}
+#section-servicios .hexagono-2:hover + .texto-2 {
+  display: block;
+  opacity: 1;
+  color: #363085;
+}
+#section-servicios .hexagono-3:hover + .texto-3 {
+  display: block;
+  opacity: 1;
+  color: #363085;
+}
+#section-servicios .hexagono-4:hover + .texto-4 {
+  display: block;
+  opacity: 1;
+  color: #363085;
+}
+#section-servicios .hexagono-5:hover + .texto-5 {
+  display: block;
+  opacity: 1;
+  color: #363085;
+}
+#section-servicios .hexagono-1 {
+  right: 33.5%;
+  top: 6.2%;
+  width: 10%;
+  height: auto;
+}
+#section-servicios .hexagono-2 {
+  right: 36.5%;
+  top: 19%;
+  width: 17.5%;
+  height: auto;
+}
+#section-servicios .hexagono-3 {
+  left: 17.7%;
+  bottom: 24%;
+  width: 17.5%;
+  height: auto;
+}
+#section-servicios .hexagono-4 {
+  left: 31.5%;
+  bottom: 8%;
+  width: 12%;
+  height: auto;
+}
+#section-servicios .hexagono-5 {
+  right: 36.5%;
+  bottom: 0%;
+  width: 17.5%;
+  height: auto;
+}
+#section-servicios .fondo {
+  position: relative;
   max-width: 100%;
   display: block;
   width: 100%;
+  z-index: 4;
+  pointer-events: none;
 }
 #section-servicios .texto-1, #section-servicios .texto-2, #section-servicios .texto-3, #section-servicios .texto-4, #section-servicios .texto-5 {
-  color: #363085;
+  color: #fff;
   font-size: 1.563rem;
   line-height: 1.563rem;
   font-weight: bold;
   position: absolute;
   transition: all 0.4s;
+  display: none;
+  opacity: 0;
 }
 #section-servicios .texto-1:after, #section-servicios .texto-2:after, #section-servicios .texto-3:after, #section-servicios .texto-4:after, #section-servicios .texto-5:after {
   content: "";
@@ -982,16 +1058,18 @@ main.hero button:hover {
   right: 22%;
 }
 #section-servicios .texto-3 {
-  top: 60%;
-  left: 15%;
+  top: 59%;
+  left: 3%;
+  text-align: right;
 }
 #section-servicios .texto-4 {
-  top: 84%;
-  left: 20%;
+  bottom: 8%;
+  left: 16%;
+  text-align: right;
 }
 #section-servicios .texto-5 {
   top: 81%;
-  right: 22%;
+  right: 20%;
 }
 
 @media (max-width: 767px) {
@@ -1080,6 +1158,87 @@ main.hero button:hover {
   #section-servicios .texto-5 {
     top: 80%;
     right: 5%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499.9px) {
+  #section-servicios .texto-1, #section-servicios .texto-2, #section-servicios .texto-3, #section-servicios .texto-4, #section-servicios .texto-5 {
+    font-size: 1.4rem;
+  }
+  #section-servicios .texto-1 {
+    top: 12%;
+    right: 20%;
+  }
+  #section-servicios .texto-2 {
+    top: 30%;
+    right: 22.5%;
+  }
+  #section-servicios .texto-3 {
+    top: 59%;
+    left: 1.5%;
+    text-align: right;
+  }
+  #section-servicios .texto-4 {
+    bottom: 8%;
+    left: 14%;
+    text-align: right;
+  }
+  #section-servicios .texto-5 {
+    top: 81%;
+    right: 18.5%;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1799.9px) {
+  #section-servicios .texto-1, #section-servicios .texto-2, #section-servicios .texto-3, #section-servicios .texto-4, #section-servicios .texto-5 {
+    font-size: 1.4rem;
+  }
+  #section-servicios .texto-1 {
+    top: 12%;
+    right: 23%;
+  }
+  #section-servicios .texto-2 {
+    top: 30%;
+    right: 25.5%;
+  }
+  #section-servicios .texto-3 {
+    top: 59%;
+    left: 4%;
+    text-align: right;
+  }
+  #section-servicios .texto-4 {
+    bottom: 8%;
+    left: 18%;
+    text-align: right;
+  }
+  #section-servicios .texto-5 {
+    top: 81%;
+    right: 22%;
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 2199.9px) {
+  #section-servicios .texto-1, #section-servicios .texto-2, #section-servicios .texto-3, #section-servicios .texto-4, #section-servicios .texto-5 {
+    font-size: 1.563rem;
+  }
+  #section-servicios .texto-1 {
+    top: 12%;
+    right: 23%;
+  }
+  #section-servicios .texto-2 {
+    top: 30%;
+    right: 26.5%;
+  }
+  #section-servicios .texto-3 {
+    top: 59%;
+    left: 5.5%;
+    text-align: right;
+  }
+  #section-servicios .texto-4 {
+    bottom: 8%;
+    left: 19.5%;
+    text-align: right;
+  }
+  #section-servicios .texto-5 {
+    top: 81%;
+    right: 24%;
   }
 }
 #section-demo {

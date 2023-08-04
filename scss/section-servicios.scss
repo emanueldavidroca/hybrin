@@ -19,11 +19,76 @@
         position: absolute;
         z-index: 3;
     }
+    .hexagono:hover{
+        -webkit-filter:
+        drop-shadow(3px 3px 0  $color-rojo) 
+        drop-shadow(-3px -3px 0  $color-rojo) 
+        drop-shadow(3px -3px 0  $color-rojo) 
+        drop-shadow(-3px 3px 0  $color-rojo);
+        filter: 
+        drop-shadow(3px 3px 0  $color-rojo) 
+        drop-shadow(-3px -3px 0  $color-rojo) 
+        drop-shadow(3px -3px 0  $color-rojo) 
+        drop-shadow(-3px 3px 0  $color-rojo);
+    }
+    .hexagono-1:hover + .texto-1{
+        display: block;
+        opacity: 1;
+        color:$color-azul;
+    }
+    .hexagono-2:hover + .texto-2{
+        display: block;
+        opacity: 1;
+        color:$color-azul;
+    }
+    .hexagono-3:hover + .texto-3{
+        display: block;
+        opacity: 1;
+        color:$color-azul;
+    }
+    .hexagono-4:hover + .texto-4{
+        display: block;
+        opacity: 1;
+        color:$color-azul;
+    }
+    .hexagono-5:hover + .texto-5{
+        display: block;
+        opacity: 1;
+        color:$color-azul;
+    }
     .hexagono-1{
-        left: 20%;
-        top: 20%;
+        right: 33.5%;
+        top: 6.2%;
         width: 10%;
-        height: 10%;
+        height: auto;
+    }
+
+    .hexagono-2{
+        right: 36.5%;
+        top: 19%;
+        width: 17.5%;
+        height: auto;
+
+    }
+    .hexagono-3{
+        left: 17.7%;
+        bottom: 24%;
+        width: 17.5%;
+        height: auto;
+
+    }
+    .hexagono-4{
+        left: 31.5%;
+        bottom: 8%;
+        width: 12%;
+        height: auto;
+
+    }
+    .hexagono-5{
+        right: 36.5%;
+        bottom: 0%;
+        width: 17.5%;
+        height: auto;
 
     }
     .fondo{
@@ -32,14 +97,17 @@
         display: block;
         width: 100%;
         z-index: 4;
+        pointer-events: none;
     }
     .texto-1,.texto-2,.texto-3,.texto-4,.texto-5{
-        color:$color-azul;
+        color:$color-blanco;
         font-size: $text-size-2;
         line-height: $text-size-2;
         font-weight: bold;
         position: absolute;
         transition: all 0.4s;
+        display: none;
+        opacity: 0;
     }
     .texto-1:after,.texto-2:after,.texto-3:after,.texto-4:after,.texto-5:after{
         content: "";
@@ -76,16 +144,18 @@
         right: 22%;
     }
     .texto-3{
-        top: 60%;
-        left:15%;
+        top: 59%;
+        left:3%;
+        text-align: right;
     }
     .texto-4{
-        top: 84%;
-        left:20%;
+        bottom: 8%;
+        left: 16%;
+        text-align: right;
     }
     .texto-5{
         top: 81%;
-        right:22%;
+        right:20%;
     }
 }
 @media (max-width:767px){
@@ -179,6 +249,93 @@
         .texto-5{
             top: 80%;
             right:5%;
+        }
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499.9px){
+    #section-servicios{
+        .texto-1,.texto-2,.texto-3,.texto-4,.texto-5{
+            font-size: $text-size-3;
+        }
+        .texto-1{
+            top: 12%;
+            right:20%;
+        }
+        .texto-2{
+            top: 30%;
+            right: 22.5%;
+        }
+        .texto-3{
+            top: 59%;
+            left:1.5%;
+            text-align: right;
+        }
+        .texto-4{
+            bottom: 8%;
+            left: 14%;
+            text-align: right;
+        }
+        .texto-5{
+            top: 81%;
+            right:18.5%;
+        }
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 1799.9px){
+    #section-servicios{
+        .texto-1,.texto-2,.texto-3,.texto-4,.texto-5{
+            font-size: $text-size-3;
+        }
+        .texto-1{
+            top: 12%;
+            right:23%;
+        }
+        .texto-2{
+            top: 30%;
+            right: 25.5%;
+        }
+        .texto-3{
+            top: 59%;
+            left:4%;
+            text-align: right;
+        }
+        .texto-4{
+            bottom: 8%;
+            left: 18%;
+            text-align: right;
+        }
+        .texto-5{
+            top: 81%;
+            right:22%;
+        }
+    }
+}
+@media screen and (min-width: 1800px) and (max-width: 2199.9px){
+    #section-servicios{
+        .texto-1,.texto-2,.texto-3,.texto-4,.texto-5{
+            font-size: $text-size-2;
+        }
+        .texto-1{
+            top: 12%;
+            right:23%;
+        }
+        .texto-2{
+            top: 30%;
+            right: 26.5%;
+        }
+        .texto-3{
+            top: 59%;
+            left:5.5%;
+            text-align: right;
+        }
+        .texto-4{
+            bottom: 8%;
+            left: 19.5%;
+            text-align: right;
+        }
+        .texto-5{
+            top: 81%;
+            right:24%;
         }
     }
 }

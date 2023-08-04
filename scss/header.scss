@@ -9,9 +9,12 @@ header{
             margin: auto;
             column-gap:40px;
             a{
-                color:#363085;
+                color:$color-azul;
                 font-weight: 500;
                 font-size: 18px;
+            }
+            a:hover{
+                color:$color-rojo;
             }
         }
         #derecho-nav{
@@ -19,8 +22,8 @@ header{
             #acceso-clientes{
                 padding: 0px 12px;
                 border-radius: 17px;
-                color:#363085;
-                border:2px #D83D2B solid;
+                color:$color-azul;
+                border:2px $color-rojo solid;
                 font-size: 18px;
                 font-weight: 500;
             }
